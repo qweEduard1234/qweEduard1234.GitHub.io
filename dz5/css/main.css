@@ -1,0 +1,81 @@
+body,*{
+   
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #c2c2c2;    
+}
+.wrapper{
+    max-width: 960px;   
+    margin:5% auto;    
+}
+.fl1,.fl2,.fl3,.fl4{
+    outline:1px solid red;    
+    width: 100%;
+    margin:40px 0;   
+}
+
+.fl1{
+    /* padding: 25px; */
+    background-color: #ffab11;
+    margin: 25px auto;
+    overflow: hidden;
+}
+
+.fl1 li{
+    float:left;
+    list-style-type: none;
+    margin:15px;
+}
+
+.fl1 li a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.fl2{
+    /* padding: 25px;  */
+    background-color: #ebebeb;
+    overflow: hidden;
+}
+
+.fl2 li{
+    float:right;
+    list-style-type: none;
+    margin:15px;
+}
+
+.fl2 li a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.fl3{
+    /* padding: 25px; */
+    background-color: #ffab11;
+    overflow: hidden;
+    /* float: left; */
+    /* width: 200px; */
+    /* margin: 40; */
+}
+
+.fl4{
+    /* padding: 25px; */
+    background-color: black;
+    color:white;
+}
+
+
+.clearFix::after{
+    content:"";
+    display:block; 
+    clear:both;
+}
+
+.wrapFirst{
+    min-width: 880px;
+    background-image: url("https://picsum.photos/800/800?grayscale&blur=2&random=1");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
