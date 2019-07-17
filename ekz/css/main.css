@@ -1,0 +1,167 @@
+body,*{
+   
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #c2c2c2;    
+}
+.wrapper{
+    max-width: 960px; 
+    min-height: 2000px;    
+    margin:5% auto;    
+}
+.fl1,.fl2,.fl3,.fl4{
+    outline:1px solid red;    
+    width: 100%;
+    margin:40px 0;   
+}
+
+.fl1{
+    /* padding: 25px; */
+    background-color: #ffab11;
+    margin: 25px auto;
+    overflow: hidden;
+}
+
+.fl1 li{
+    float:left;
+    list-style-type: none;
+    margin:15px;
+}
+
+.fl1 li a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.fl2{
+    /* padding: 25px;  */
+    background-color: #ebebeb;
+    overflow: hidden;
+}
+
+.fl2 li{
+    float:right;
+    list-style-type: none;
+    margin:15px;
+}
+
+.fl2 li a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.fl3{
+    /* padding: 25px; */
+    background-color: #ffab11;
+    overflow: hidden;
+    /* float: left; */
+    /* width: 200px; */
+    /* margin: 40; */
+}
+
+.fl4{
+    /* padding: 25px; */
+    background-color: black;
+    color:white;
+}
+
+
+.clearFix::after{
+    content:"";
+    display:block; 
+    clear:both;
+}
+
+
+
+.container1{
+    min-width: 800px;   
+    min-height: 2600px; 
+    background-image: url("https://picsum.photos/800/2800?grayscale&blur=2&random=1");
+    background-size: 120% auto;
+    background-repeat: no-repeat;  
+} 
+
+.bg_nav_mi{
+    background-color: rgb(133, 23, 23);
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    width: 80px;
+    height: 80px;
+    
+}
+
+.grid {
+    display: grid;   
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px 25px;
+    grid-template-rows: repeat(3, minmax(30px, auto));    
+}
+
+.grid div {
+	background-color: rgb(76, 150, 126);
+	border: 1px solid #db17a0;
+	border-radius: 5px;
+	padding: 8px 15px;
+	color: #ffffff;
+	font-size: 18px;
+	font-family: roboto;
+}
+
+.grid > div:nth-child(odd) {
+	background-color: #941111;
+}
+
+.grid div:nth-child(1) {   
+    grid-column: 1 / -1;
+}
+
+.grid div:nth-child(2) {    
+}
+
+.grid div:nth-child(4) {   
+    align-self: center;
+    justify-self: end;
+}
+
+.wrap{
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 20px;
+    grid-template-areas: 
+        "footer footer"
+        "aside article"
+        "header header"
+}
+
+.wrap > * {
+	background-color: hsl(34, 92%, 53%);
+	border: 1px solid #0e3abe;
+    border-radius: 5px;
+   
+	padding: 8px 15px;
+	color: #ffffff;
+	font-size: 18px;
+	font-family: roboto;
+}
+
+.wrap > *:nth-child(odd) {
+	background-color: #4db1cf;
+}
+
+header{
+    grid-area: header;
+}
+article{
+    grid-area: article;
+}
+aside{
+    grid-area: aside;
+}
+footer{
+    grid-area: footer;
+}
